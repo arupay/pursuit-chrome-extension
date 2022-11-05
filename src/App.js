@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TestComponent from './Component/TestComponent';
 
 function App() {
   function pursuitISA(salary) {
@@ -10,9 +11,9 @@ function App() {
     let grossMonthly = (salary / 12).toFixed(2);
     let pursuitMonthly = 0;
 
-    if (Number.isNaN(Number(salary))) {
-      return `Sorry. Salary must be in number only format!`;
-    }
+    // if (Number.isNaN(Number(salary))) {
+    //   return `Sorry. Salary must be in number only format!`;
+    // }
 
     if (salary > 70000) {
       pursuitMonthly = ((salary * 0.15) / 12).toFixed(2);
@@ -20,6 +21,9 @@ function App() {
       pursuitMonthly = ((salary * 0.1) / 12).toFixed(2);
     } else if (salary >= 50000) {
       pursuitMonthly = ((salary * 0.05) / 12).toFixed(2);
+    }
+    if (pursuitMonthly > 70000) {
+      pursuitMonthly = 70000;
     }
     let leftOver = grossMonthly - pursuitMonthly;
     let totalToPursuit = pursuitMonthly * 48;
@@ -77,6 +81,7 @@ function App() {
         </Button>
       </Form>
       <div className="message">{message}</div>
+      <TestComponent />
     </div>
   );
 }
