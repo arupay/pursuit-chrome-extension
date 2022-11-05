@@ -68,7 +68,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Hello Fellow! Time to Pay Up Pursuit!!! </h2>
+      <h2 className='heading'>Hello Fellow! Time to Pay Up Pursuit!!! </h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>
