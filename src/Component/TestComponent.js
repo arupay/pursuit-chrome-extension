@@ -1,5 +1,12 @@
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function TestComponent() {
-  return <div>bottom of page test component</div>;
+  return (
+    <div>
+      <br />
+      <Button variant="warning">Pay with deso coin</Button>
+    </div>
+  );
 }
 
 export default TestComponent;

@@ -3,7 +3,11 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TestComponent from './Component/TestComponent';
+//import sendSMS from './test.js';
+// const accountSid = 'ACd7393b2badac6de36c17104f200a73e1';
+// const authToken = '0457e51dd7515746179b655d1dc1e7d4';
+// const client = require('twilio')(accountSid, authToken);
+//const twilio = require('twilio');
 
 function App() {
   function pursuitISA(salary) {
@@ -33,10 +37,11 @@ function App() {
 
     return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. Every month, You have to pay Pursuit $${pursuitMonthly}. Before taxes, You will have $${leftOver} left over each month. At this salary, you will have paid $${totalToPursuit} to Pursuit over the next 48 months. you're welcome!`;
   }
-
+  //IsaPursuitis@Joke2022@$$
   const [fellow, setFellow] = useState({
     name: '',
     salary: 0,
+    phonenumber: '',
   });
 
   const [message, setMessage] = useState(null);
@@ -49,6 +54,7 @@ function App() {
     e.preventDefault();
     let message = pursuitISA(fellow.salary);
     setMessage(message);
+  
   };
 
   return (
@@ -63,6 +69,7 @@ function App() {
             type="name"
             placeholder="Enter your name"
             onChange={handleTextChange}
+            required
           />
           <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
@@ -74,6 +81,18 @@ function App() {
             type="number"
             placeholder="$$$$"
             onChange={handleTextChange}
+            required
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="phonenumber">
+          <Form.Label>
+            <h5>Enter your Phone Number</h5>
+          </Form.Label>
+          <Form.Control
+            type="tel"
+            placeholder="#-(###) ###-####"
+            onChange={handleTextChange}
+            required
           />
         </Form.Group>
         <Button variant="primary" type="submit">
@@ -81,7 +100,6 @@ function App() {
         </Button>
       </Form>
       <div className="message">{message}</div>
-      <TestComponent />
     </div>
   );
 }
