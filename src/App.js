@@ -29,7 +29,7 @@ function App() {
     if (pursuitMonthly > 70000) {
       pursuitMonthly = 70000;
     }
-    let leftOver = grossMonthly - pursuitMonthly;
+    let leftOver = (grossMonthly - pursuitMonthly).toFixed(2);
     let totalToPursuit = pursuitMonthly * 48;
     if (totalToPursuit > 70000) {
       totalToPursuit = 70000;
@@ -41,7 +41,6 @@ function App() {
   const [fellow, setFellow] = useState({
     name: '',
     salary: 0,
-    phonenumber: '',
   });
 
   const [message, setMessage] = useState(null);
@@ -54,7 +53,7 @@ function App() {
     e.preventDefault();
     let message = pursuitISA(fellow.salary);
     setMessage(message);
-  
+    e.target.reset();
   };
 
   return (
@@ -84,21 +83,11 @@ function App() {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="phonenumber">
-          <Form.Label>
-            <h5>Enter your Phone Number</h5>
-          </Form.Label>
-          <Form.Control
-            type="tel"
-            placeholder="#-(###) ###-####"
-            onChange={handleTextChange}
-            required
-          />
-        </Form.Group>
         <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
+      <br />
       <div className="message">{message}</div>
     </div>
   );
