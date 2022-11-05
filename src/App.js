@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import chaching from './cha-ching-7053.mp3'
+
 //import sendSMS from './test.js';
 // const accountSid = 'ACd7393b2badac6de36c17104f200a73e1';
 // const authToken = '0457e51dd7515746179b655d1dc1e7d4';
@@ -10,6 +12,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //const twilio = require('twilio');
 
 function App() {
+  
+  const playAudio = () => {
+    new Audio(chaching).play();
+  };
+
+
   function pursuitISA(salary) {
     salary = Number(salary);
     let grossMonthly = (salary / 12).toFixed(2);
@@ -28,6 +36,7 @@ function App() {
     }
     if (pursuitMonthly > 70000) {
       pursuitMonthly = 70000;
+      return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. You will pay $${pursuitMonthly} this month and will have completed your ISA payments. You're done, you're welcome!`
     }
     let leftOver = (grossMonthly - pursuitMonthly).toFixed(2);
     let totalToPursuit = pursuitMonthly * 48;
@@ -53,12 +62,13 @@ function App() {
     e.preventDefault();
     let message = pursuitISA(fellow.salary);
     setMessage(message);
+    playAudio();
     e.target.reset();
   };
 
   return (
     <div className="App">
-      <h2>Howdy Fellows! time to pay Pursuit </h2>
+      <h2>Hello Fellow! Time to Pay Up Pursuit!!! </h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>
