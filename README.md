@@ -1,3 +1,6 @@
+# [Link to our website!](https://augustorupay.wixsite.com/pursuit-chrome-exten)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -71,13 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
----CHROME EXTENSION HACKATHON -- 
-
-TO-DO
-
-ISA Payment Extension
-Tracker (Back end?)
-Log in
-Cryptopayment option (simple)
-Twilio incorporation (notifications)   ALTERNATIVE (Toastify)
 
