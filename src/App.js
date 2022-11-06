@@ -3,20 +3,12 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import chaching from './cha-ching-7053.mp3'
-
-//import sendSMS from './test.js';
-// const accountSid = 'ACd7393b2badac6de36c17104f200a73e1';
-// const authToken = '0457e51dd7515746179b655d1dc1e7d4';
-// const client = require('twilio')(accountSid, authToken);
-//const twilio = require('twilio');
+import chaching from './cha-ching-7053.mp3';
 
 function App() {
-  
   const playAudio = () => {
     new Audio(chaching).play();
   };
-
 
   function pursuitISA(salary) {
     salary = Number(salary);
@@ -36,7 +28,7 @@ function App() {
     }
     if (pursuitMonthly > 70000) {
       pursuitMonthly = 70000;
-      return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. You will pay $${pursuitMonthly} this month and will have completed your ISA payments. You're done, you're welcome!`
+      return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. You will pay $${pursuitMonthly} this month and will have completed your ISA payments. You're done, you're welcome!`;
     }
     let leftOver = (grossMonthly - pursuitMonthly).toFixed(2);
     let totalToPursuit = pursuitMonthly * 48;
@@ -44,7 +36,7 @@ function App() {
       totalToPursuit = 70000;
     }
 
-    return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. Every month, You have to pay Pursuit $${pursuitMonthly}. Before taxes, You will have $${leftOver} left over each month. At this salary, you will have paid $${totalToPursuit} to Pursuit over the next 48 months. you're welcome!`;
+    return ` Hello ${fellow.name}! Your new job salary is $${salary}. Your gross monthly income is $${grossMonthly}. Every month, You have to pay Pursuit $${pursuitMonthly}. Before taxes, You will have $${leftOver} left over each month. At this salary, you will have paid $${totalToPursuit} to Pursuit over the next 48 months. You're Welcome!`;
   }
   //IsaPursuitis@Joke2022@$$
   const [fellow, setFellow] = useState({
@@ -68,7 +60,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className='heading'>Hello Fellow! Time to Pay Up Pursuit!!! </h2>
+      <h2 className="heading">Hello Fellow! Calulate Your Contribution </h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>
@@ -91,6 +83,17 @@ function App() {
             placeholder="$$$$"
             onChange={handleTextChange}
             required
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="phone">
+          <Form.Label>
+            <h5>Phone number</h5>
+            <p>(Receive your summary by text)</p>
+          </Form.Label>
+          <Form.Control
+            type="tele"
+            placeholder="xxx-xxx-xxxx"
+            onChange={handleTextChange}
           />
         </Form.Group>
         <Button variant="primary" type="submit">
