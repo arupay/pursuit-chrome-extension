@@ -5,7 +5,16 @@
 <img width="500" alt=" Pursuit " src="https://user-images.githubusercontent.com/96318127/200187434-7d45182e-3848-4374-8e53-54e3c67820f2.png">
 <img width="500" alt="  Chrome Extension" src="https://user-images.githubusercontent.com/96318127/200187366-31a18591-739d-4acf-83dd-497343ce43ff.png">
 
-Every groundbreaking App begins with a series of small ideas that are combined into an all inclusive one. At Pursuit Chrome Extension , we wanted to change how fellows see the concept of ISA payments, by offering a simple and user-friendly platform they can trust. Our team of incredibly bright minded individuals have dedicated an immense amount of time and effort to ensure that you always know your ISA contribution.
+Every groundbreaking App begins with a series of small ideas that are combined into an all inclusive one. At Pursuit Chrome Extension , we wanted to change how fellows see the concept of ISA payments, by offering a simple and user-friendly platform they can trust. Our team has dedicated an immense amount of time and effort to simplify your ISA contribution and finances.
+
+
+## Developers 
+- [Augusto Rupay](https://github.com/arupay)
+- [Luis Ortiz](https://github.com/Lortiz528)
+- [Li Li Wu](https://github.com/liliwu8)
+- [Juhao Chen](https://github.com/JuHaoChen1997)
+- [Lawrence Chen](https://github.com/lchen6283)
+
 
 ## Important Links
 
