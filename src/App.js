@@ -59,8 +59,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h2 className="heading">Hello Fellow! Calulate Your Contribution </h2>
+    <div className='App'>
+      <h2 className='heading'>Hello Fellow! Calculate Your Contribution </h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className='mb-3' controlId='name'>
           <Form.Label>
@@ -79,20 +79,20 @@ function App() {
             <h5>Salary</h5>
           </Form.Label>
           <Form.Control
-            type="number"
-            placeholder="$$$$"
+            type='number'
+            placeholder='$$$$'
             onChange={handleTextChange}
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="phone">
+        <Form.Group className='mb-3' controlId='phone'>
           <Form.Label>
             <h5>Phone number</h5>
             <p>(Receive your summary by text)</p>
           </Form.Label>
           <Form.Control
-            type="tele"
-            placeholder="xxx-xxx-xxxx"
+            type='tele'
+            placeholder='xxx-xxx-xxxx'
             onChange={handleTextChange}
           />
         </Form.Group>
@@ -101,7 +101,7 @@ function App() {
         </Button>
       </Form>
       <br />
-      <div className="message">{message}</div>
+      <div className='message'>{message}</div>
     </div>
   )
 }
