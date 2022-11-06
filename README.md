@@ -1,77 +1,52 @@
 # [Link to our website!](https://augustorupay.wixsite.com/pursuit-chrome-exten)
 
+# Pursuit  ISA Calculator 
 
-# Getting Started with Create React App
+<img width="500" alt=" Pursuit " src="https://user-images.githubusercontent.com/96318127/200187434-7d45182e-3848-4374-8e53-54e3c67820f2.png">
+<img width="500" alt="  Chrome Extension" src="https://user-images.githubusercontent.com/96318127/200187366-31a18591-739d-4acf-83dd-497343ce43ff.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Every groundbreaking App begins with a series of small ideas that are combined into an all inclusive one. At Pursuit Chrome Extension , we wanted to change how fellows see the concept of ISA payments, by offering a simple and user-friendly platform they can trust. Our team of incredibly bright minded individuals have dedicated an immense amount of time and effort to ensure that you always know your ISA contribution.
 
-## Available Scripts
+## Important Links
 
-In the project directory, you can run:
+- [Deployed About Website](https://augustorupay.wixsite.com/pursuit-chrome-exten)
 
-### `npm start`
+## Local Set Up
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you'd like to run the project locally, please read the following stems
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend Setup
 
-### `npm test`
+Prerequisites are Git and Node.js & Google Chrome Extensions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
 
-### `npm run build`
+# clone the repository to your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone git@github.com:arupay/pursuit-chrome-extension.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# navigate to the front-end directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd pursuit-chrome-extension
 
-### `npm run eject`
+# install the required node modules
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# create a build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm run build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Chrome Extensions Instructions
 
-## Learn More
+Open the Google Chrome Developer Console
+Click load unpacked
+find the build file and click submit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Screenshots (Desktop)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+![Extension Photo](https://user-images.githubusercontent.com/96318127/200187845-645ccfb2-fc0b-4c1f-a234-d8895382db40.png)
 
 
 
