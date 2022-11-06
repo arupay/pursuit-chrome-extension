@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 module.exports = function override(config) {
-  const fallback = { fs: false };
+  const fallback = { fs: false, zlib: false };
   Object.assign(fallback, {
     crypto: require.resolve("crypto-browserify"),
     stream: require.resolve("stream-browserify"),
@@ -12,8 +12,8 @@ module.exports = function override(config) {
     net: require.resolve("net"),
     tls: require.resolve("tls"),
     path: require.resolve("path"),
-    fs: require.resolve("fs"),
-    zlib: require.resolve("zlib"),
+    //fs: require.resolve("fs"),
+    //zlib: require.resolve("zlib"),
   });
   config.resolve.fallback = fallback;
   config.plugins = (config.plugins || []).concat([
