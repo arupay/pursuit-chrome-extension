@@ -1,18 +1,20 @@
-{
-"manifest_version": 2,
-"name": "Pursuit ISA Chrome Extension",
-"description": "", 
-"version": "1.0",
 
-"browser_action": {
-"default_popup": "index.html", 
-"default_title": "Your extension title"
-},
-"icons" :{
-"16": "logo192.png",
-"48": "logo192.png",
-"128": "logo192.png"
-},
-"content_security_policy": "script-src 'self' 'sha256-wkEhk1Pm58HZQSzT/oPAcIeUYSsJpEEGo2v2M1aGgTs='; object-src 'self'",
-"permissions": []
+
+{
+    "name": "Pursuit ISA Chrome Extension",
+    "version": "1.0.0",
+    "description": "ISA Pursuit Calculator",
+    "manifest_version": 3,
+    "author": "luis, juhao, lili, augusto, lawrence",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "ISA Calculator"
+    },
+    "icons" :{
+        "16": "logo192.png",
+        "48": "logo192.png",
+        "128": "logo192.png"
+        }
 }
+
+

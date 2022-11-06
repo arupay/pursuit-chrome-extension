@@ -1,8 +1,9 @@
 .App {
   display: flex;
     flex-direction: column;
+    color: white;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(69, 69, 208);
 }
 
 
@@ -10,7 +11,7 @@
 
 
 html{
-  background-color: aqua;
+  background-color: rgb(69, 69, 208);
 }
 
 .message{
@@ -18,3 +19,6 @@ html{
 }
 
 
+.heading{
+  text-align: center;
+}
