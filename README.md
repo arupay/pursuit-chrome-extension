@@ -46,7 +46,7 @@ find the build file and click submit
 ```
 ### Screenshots (Desktop)
 
-<img width="500" alt=" Desktop " src="[https://user-images.githubusercontent.com/96318127/200187434-7d45182e-3848-4374-8e53-54e3c67820f2.png](https://user-images.githubusercontent.com/96318127/200187845-645ccfb2-fc0b-4c1f-a234-d8895382db40.png)">
+<img width="500" alt=" Desktop " src="https://user-images.githubusercontent.com/96318127/200187845-645ccfb2-fc0b-4c1f-a234-d8895382db40.png">
 
 
 
